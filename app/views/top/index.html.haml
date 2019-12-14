@@ -1,0 +1,12 @@
+=link_to new_shipper_registration_path do
+  新規会員登録 (荷主)
+=link_to new_shipper_session_path do
+  ログイン (荷主)
+= link_to destroy_shipper_session_path, method: :delete do
+  ログアウト (荷主)
+=link_to new_carrier_registration_path do
+  新規会員登録 (運送会社)
+=link_to new_carrier_session_path do
+  ログイン (運送会社)
+= link_to destroy_carrier_session_path, method: :delete do
+  ログアウト (運送会社)

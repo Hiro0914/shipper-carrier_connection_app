@@ -48,8 +48,8 @@ group :development, :test do
 end
 
 group :test do 
-    gem 'rspec-rails'
-    gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -64,16 +64,18 @@ group :development do
 end
 
 group :production do 
-    gem 'unicorn'
+  gem 'unicorn'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
+gem 'deep_cloneable' 
 gem 'devise'
 gem 'draper'
 gem 'fog-aws'
+gem 'gon'
 gem 'gretel'
 gem 'jquery-rails'
 gem 'kaminari'

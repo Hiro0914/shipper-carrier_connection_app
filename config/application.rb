@@ -29,5 +29,13 @@ module ShipperCarrierConnectionApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # controller作成時の同時生成ファイルの抑制
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+      g.test_framework false
+    end
   end
 end
