@@ -11,7 +11,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  # rails側でエラーが出ている場合、本番環境でもエラー画面を表示できるようにする
+  # サーバーサイド側でエラーが出ている場合、本番環境でも「We're sorry, but...」の代わりに、railsのエラー画面を表示できるようにする
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
 
